@@ -127,7 +127,7 @@ body{
     top: 0;
     font-weight: 700;
     width: 100%;
-    
+ 
 }
 
 .contact-us-content{
@@ -159,8 +159,8 @@ body{
   border: none;
 
 }
-
 footer {
+ margin-top: -40px; 
   background-color: #E2DB20;
   height: 123px;
   display: flex; /* Enable Flexbox */
