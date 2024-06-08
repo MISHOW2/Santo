@@ -1,5 +1,8 @@
+*{
+  font-family: "Inter", sans-serif;
+}
 .header{
-  background-image: url('/images/back\ ground.jpg');
+  background-image: url('../images/background.jpg');
     background-color: rgba(0, 0, 0, 0.377); /* Black color with 50% opacity */
     background-blend-mode: multiply; /* Blend the image and color */
     background-size: cover; /* Cover the entire page */
@@ -8,7 +11,7 @@
     height: 543px; 
     position: absolute;
     top: 0;
-  
+   justify-content: center;
     width: 100%;
    
 }
@@ -32,11 +35,13 @@
   }
 
 
-  .navigation{
-    margin-top: 200px;
-    text-align: center;
-    
-  }
+ .navigation{
+   margin-top: 170px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack elements vertically */
+}
   .navigation ul{
     display: flex;
     gap: 40px;
@@ -45,9 +50,19 @@
     width: 631px;
     height: 42px;
     align-items: center;
-    justify-content: center;
+   justify-content: center;
+    text-align: center;
   }
   .navigation a {
    text-decoration: none;
-   
+   color: black;
+  cursor: pointer;
+
+  }
+  .navigation li{
+    font-size: 12px;
+  }
+
+  .social-icons:hover{
+    cursor: pointer;
   }

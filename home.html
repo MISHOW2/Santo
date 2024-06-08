@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Sonto Guest House</title>
   <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/hero-section.css">
 </head>
 <body>
   <div class="header">
@@ -23,15 +27,108 @@
       <ul>
         <li><a href="home.html">HOME</a></li>
         <li><a href=""></a>ABOUT US</li>
-        <li><a href=""></a>GALLERY</li>
-        <li><a href=""></a>CONTACT US</li>
+        <li><a href="gallery.html"></a>GALLERY</li>
+        <li><a href="contact-us.html"></a>CONTACT US</li>
       </ul>
+    </div>
+
+    <div class="welcome-message">
+      <h1>Welcome to  Santo guest House</h1>
+      <p>THE PLACE YOU ARE LOOKING FOR</p>
     </div>
   </div>
 
   <div class="hero-section">
+   <div class="mid-message">
+    <h1>Comfortable stay, affordable rate</h1>
+    <p>Enjoy a relaxing stay at our guest house. We offer rooms with and without TV, at very affordable rates</p>
+   </div>
 
+
+   <div class="rooms">
+      <div class="room-content-container">
+        <div class="room-type">
+          <p>Room with TV</p>
+        </div>
+        <div class="room-image">
+          <img src="images/room.jpg" alt="">
+        </div>
+        <div class="description">
+          <p>Enjoy a comfortable stay in our well-furnished room equipped with a television. Perfect for relaxing and unwinding after a busy day.</p>
+        </div>
+        <div class="rates">
+          <p>3 hours or less: R250
+          Overnight: R300</p>
+        <button>BOOK NOW</button>
+      </div>
+   </div>
+
+   <div class="room-content-container">
+    <div class="room-type">
+      <p>Room without TV</p>
+    </div>
+    <div class="room-image">
+      <img src="images/room.jpg" alt="">
+    </div>
+    <div class="description">
+      <p>Our budget-friendly room without a television is ideal for guests who prefer a simple and affordable stay.</p>
+    </div>
+    <div class="rates">
+      <p>3 hours or less: R200
+        Overnight: R250</p>
+    <button>BOOK NOW</button>
   </div>
+</div>
+  </div>
+</div>
 
+<div class="booking-infor">
+  <h1>BOOKING INFOROMATION</h1>
+  <p>To book a room, call us at 0664552938 / 060723797 or email us at [email address]</p>
+
+  <div class="gallary-more">
+    <div class="message-gallery">
+      <p>Take a look at our beautiful guest house. Here are some images of our rooms and amenities. </p>
+    </div>
+    <div class="gallery-flex-box">
+      <img src="images/room.jpg" alt="">
+      <img src="images/room1.jpg" alt="">
+      <img src="images/room.jpg" alt="">
+    </div>
+    <div class="link-view-more">
+       <a href="gallery.html">VIEW MORE</a>
+    </div>
+     
+  </div>
+</div>
+
+<div class="contact-us-form">
+   
+  <div class="contact-us-content">
+    <h2>Contact Us</h2>
+    <form action="your-backend-endpoint" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter Phone number">
+            </div>
+            <div class="form-group">
+              
+                <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+   </div>
+  
+   <footer>
+    <p>&copy;2024 Santo Guest House. All rights reserved</p>
+   </footer>
+</div>
+</div>
 </body>
 </html>
