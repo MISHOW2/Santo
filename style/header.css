@@ -1,0 +1,53 @@
+.header{
+  background-image: url('/images/back\ ground.jpg');
+    background-color: rgba(0, 0, 0, 0.377); /* Black color with 50% opacity */
+    background-blend-mode: multiply; /* Blend the image and color */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center center; /* Center the image */
+    height: 543px; 
+    position: absolute;
+    top: 0;
+  
+    width: 100%;
+   
+}
+
+.logo{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.63); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 700px;
+}
+ .logo img{
+  height:30px ;
+ }
+
+ .logo-container h1{
+   color:#FFF500 ;
+  }
+
+
+  .navigation{
+    margin-top: 200px;
+    text-align: center;
+    
+  }
+  .navigation ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    background-color:#FFF500 ;
+    width: 631px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation a {
+   text-decoration: none;
+   
+  }
