@@ -9,6 +9,17 @@
   <title>Sonto Guest House</title>
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/hero-section.css">
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "UQQS-Ifyl9JbNe1zh",
+      });
+   })();
+</script>
 </head>
 <body>
   <div class="header">
@@ -59,7 +70,7 @@
         <div class="rates">
           <p>3 hours or less: R250
           Overnight: R300</p>
-        <button>BOOK NOW</button>
+          <a href="booking.html">BOOK NOW</a>
       </div>
    </div>
 
@@ -76,7 +87,7 @@
     <div class="rates">
       <p>3 hours or less: R200
         Overnight: R250</p>
-    <button>BOOK NOW</button>
+    <a href="booking.html">BOOK NOW</a>
   </div>
 </div>
   </div>
@@ -106,28 +117,36 @@
    
   <div class="contact-us-content">
     <h2>Contact Us</h2>
-    <form action="your-backend-endpoint" method="POST">
-            <div class="form-group">
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone</label><br>
-                <input type="tel" id="phone" name="phone" required placeholder="Enter Phone number">
-            </div>
-            <div class="form-group">
-              
-                <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-   </div>
+    <div class="form">
+      <div class="form-group">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter name">
+      </div>
   
+      <div class="form-group">
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter email">
+      </div>
+  
+      <div class="form-group">
+          <label for="phone">Phone</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="Enter Phone number">
+      </div>
+  
+      <div class="form-group">
+          <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+      </div>
+      <div class="form-group">
+          <button class="btn btn-primary" type="button" onclick="sendMail();">Submit</button>
+      </div>
+          <p class="js-message"></p>
+   </div>
+  </div>
    <footer>
     <p>&copy;2024 Santo Guest House. All rights reserved</p>
    </footer>
+
+   <script src="script/script.js"></script>
 </div>
 </div>
 </body>

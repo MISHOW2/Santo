@@ -1,8 +1,29 @@
+.header {
+  background-image: url('../images/background.jpg');
+  background-color: rgba(0, 0, 0, 0.377);
+  /* Black color with 50% opacity */
+  background-blend-mode: multiply;
+  /* Blend the image and color */
+  background-size: cover;
+  /* Cover the entire page */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-position: center center;
+  /* Center the image */
+  height: 443px;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  width: 100%;
+
+}
+
 .hero-section-booking{
   padding: 70px;
-  margin-top: 600px;
+  margin-top: 500px;
   margin-bottom: 100px;
 }
+
 
 span{
   color: #E2DB20;
@@ -32,4 +53,8 @@ span{
 h1{
   font-size: 50px;
   font-weight: 300;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
 }

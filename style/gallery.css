@@ -1,0 +1,95 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+a {
+  transition: all 0.3s ease-in-out;
+}
+.back-to-menu {
+  margin: 20px;
+}
+
+.back-to-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.back-to-menu a .back {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.center-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 40PX;
+}
+
+.slide-headings {
+  display: flex;
+  width: 815px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.slide-headings a {
+  text-decoration: underline;
+  color: #000;
+  font-size: 20px;
+ 
+ 
+  transition: background-color 0.3s;
+}
+
+.slide-headings a:hover {
+  background-color: #f0f0f0; 
+  border: 1px;
+  
+  padding: 10px 20px;
+}
+
+.slide-content {
+  width: 815px;
+  height: 556px; /* 278px x 2 rows */
+ 
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  display: none; /* Hide all slides by default */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#rooms {
+  display: grid;
+  grid-template-columns: repeat(2, 377px);
+  grid-template-rows: repeat(2, 278px);
+  gap: 10px;
+}
+
+#rooms img {
+  width: 377px;
+  height: 278px;
+  object-fit: cover;
+}
+
+

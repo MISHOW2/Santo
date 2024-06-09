@@ -6,48 +6,88 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <title>Sonto Guest House</title>
-  <link rel="stylesheet" href="style/header.css">
-  <link rel="stylesheet" href="style/hero-section.css">
+  <link rel="stylesheet" href="style/booking.css">
+  <title>Booking</title>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">
-      <div class="logo-container">
-        <h1>SANTO</h1>
-      </div>
-
-      <div class="social-icons">
-        <img src="images/icons/icons8-facebook-50.png" alt="">
-        <img src="images/icons/icons8-instagram-50.png" alt="">
-      </div>
-    </div>
-
-    <div class="navigation">
-      <ul>
-        <li><a href="home.html">HOME</a></li>
-        <li><a href="About-us.html">ABOUT US</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="contact-us.html">CONTACT US</a></li>
-      </ul>
-    </div>
+  <div class="flex-box">
+    <div class="right-side">
+    <div class="back-to-menu">
+      <a href="home.html">
+        <p>
+          <img src="images/icons/icons8-back-50.png" class="back">BACK TO HOME PAGE
+         </p>
+      </a>
   </div>
 
+  <div class="booking-section">
+    <h1>BOOKING</h1>
+    <div class="booking-form">
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
 
-  <div class="hero-section-booking">
-    <h3>Contact us</h3>
-    <h1>Get In <span>Touch</span></h1>
-    <div class="contact-information">
-      <div class="phone">
-        
-      </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter Phone number">
+            </div>
+
+            <h1>CHECK-IN</h1>
+            <h1>RATES</h1>
+            
+            <fieldset>
+                <legend>ROOM WITH TV</legend>
+                <label>
+                    <input type="radio" name="roomWithTV" value="3_hours_or_less_tv">
+                    3 HOURS OR LESS R250
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="roomWithTV" value="overnight_tv">
+                    OVERNIGHT R300
+                </label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>ROOM WITHOUT TV</legend>
+                <label>
+                    <input type="radio" name="roomWithoutTV" value="3_hours_or_less_notv">
+                    3 HOURS OR LESS R200
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="roomWithoutTV" value="overnight_notv">
+                    OVERNIGHT R250
+                </label>
+            </fieldset>
+            <hr>
+            
+            <div class="submit-button"> 
+                <button class="btn btn-primary" type="button" onclick="sendBookingMail();">Submit</button>
+            </div>
+            <p class="js-message"></p>
+        </form>
     </div>
+</div>
+
+
   </div>
-  
-   <footer>
-    <p>&copy;2024 Santo Guest House. All rights reserved</p>
-   </footer>
-</div>
-</div>
+
+  <div class="left-side">
+
+  </div>
+ </div>
+ <footer>
+  <p>&copy;2024 Santo Guest House. All rights reserved</p>
+ </footer>
+
+ <script src="script/booking.js"></script>
 </body>
 </html>

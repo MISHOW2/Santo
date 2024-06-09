@@ -1,40 +1,47 @@
-body{
+body {
   overflow-x: hidden;
 }
-.welcome-message{
+
+.welcome-message {
   color: white;
   font-weight: 400;
   text-align: center;
   margin-top: 70px;
-  
+
 }
 
-.hero-section{
+.hero-section {
   margin-top: 670px;
 }
-.mid-message{
+
+.mid-message {
   text-align: center;
   font-weight: 700;
   margin-bottom: 100px;
 }
 
-.rooms{
+.rooms {
   background-image: url('../images/entrance.jpg');
-    background-color: rgba(0, 0, 0, 0.78); /* Black color with 50% opacity */
-    background-blend-mode: multiply; /* Blend the image and color */
-    background-size: cover; /* Cover the entire page */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center center; /* Center the image */
-    height: 741px; 
-    top: 0;
-    font-weight: 700;
-    width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  background-color: rgba(0, 0, 0, 0.78);
+  /* Black color with 50% opacity */
+  background-blend-mode: multiply;
+  /* Blend the image and color */
+  background-size: cover;
+  /* Cover the entire page */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-position: center center;
+  /* Center the image */
+  height: 741px;
+  top: 0;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.room-content-container{
+.room-content-container {
   width: 400px;
   height: 453px;
   background-color: white;
@@ -43,7 +50,7 @@ body{
 
 }
 
-.room-content-container img{
+.room-content-container img {
   height: 199px;
   width: 218.12px;
 }
@@ -55,42 +62,43 @@ body{
 }
 
 
-.rooms button{
-   color: black;
-   background-color: #E2DB20;
-   border: none;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-   height: 44px;
-   width: 134px;
+.rooms a {
+  color: black;
+  background-color: #E2DB20;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 14px;
+  width: 134px;
+  text-decoration: none;
 }
 
-.rates{
+.rates {
   height: 48px;
   width: 277px;
 }
 
-.booking-infor{
+.booking-infor {
   padding: 70px;
 }
 
-.gallary-more{
-  margin-top:  130px;
- 
+.gallary-more {
+  margin-top: 130px;
+
 }
 
-.gallery-flex-box img{
-   width: 300px;
-   height: 251px;
+.gallery-flex-box img {
+  width: 300px;
+  height: 251px;
 }
 
-.gallery-flex-box{
-  margin-top:  60px;
+.gallery-flex-box {
+  margin-top: 60px;
   gap: 70px;
   display: flex;
   justify-content: center;
 }
 
-.booking-infor{
+.booking-infor {
   font-weight: 700;
 }
 
@@ -102,7 +110,8 @@ body{
   height: 49px;
   background-color: #E2DB20;
   width: 161px;
-  margin: 40px auto; /* Center the button horizontally */
+  margin: 40px auto;
+  /* Center the button horizontally */
 }
 
 .link-view-more a {
@@ -116,42 +125,48 @@ body{
 }
 
 
-.contact-us-form{
+.contact-us-form {
   background-image: url('../images/entrance.jpg');
-    background-color: rgba(0, 0, 0, 0.78); /* Black color with 50% opacity */
-    background-blend-mode: multiply; /* Blend the image and color */
-    background-size: cover; /* Cover the entire page */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-position: center center; /* Center the image */
-    height: 727px; 
-    top: 0;
-    font-weight: 700;
-    width: 100%;
- 
+  background-color: rgba(0, 0, 0, 0.78);
+  /* Black color with 50% opacity */
+  background-blend-mode: multiply;
+  /* Blend the image and color */
+  background-size: cover;
+  /* Cover the entire page */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-position: center center;
+  /* Center the image */
+  height: 727px;
+  top: 0;
+  font-weight: 700;
+  width: 100%;
+
 }
 
-.contact-us-content{
+.contact-us-content {
   padding: 90px;
   color: white;
 }
-.form-group{
-  
+
+.form-group {
+
   margin: 20px;
 }
 
-.form-group input{
-   width: 271px;
-   height: 31px;
-   border: none;
-   margin-top:10px ;
+.form-group input {
+  width: 271px;
+  height: 31px;
+  border: none;
+  margin-top: 10px;
 }
 
-.form-group textarea{
+.form-group textarea {
   width: 662px;
   height: 257px;
 }
 
-.form-group button{
+.form-group button {
   background-color: #E2DB20;
   height: 44px;
   width: 99px;
@@ -159,12 +174,20 @@ body{
   border: none;
 
 }
+
 footer {
- margin-top: -40px; 
+  margin-top: -40px;
   background-color: #E2DB20;
   height: 123px;
-  display: flex; /* Enable Flexbox */
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
+  display: flex;
+  /* Enable Flexbox */
+  align-items: center;
+  /* Vertically center the content */
+  justify-content: center;
+  /* Horizontally center the content */
   text-align: center;
+}
+
+a {
+  transition: all 0.3s ease-out;
 }

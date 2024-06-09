@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/booking.css">
+  <link rel="stylesheet" href="style/gallery.css">
+  <title>Booking</title>
+</head>
+<body>
+  <div class="back-to-menu">
+    <a href="home.html">
+      <p>
+        <img src="images/icons/icons8-back-50.png" class="back">BACK TO HOME PAGE
+      </p>
+    </a>
+  </div>
+
+  <div class="center-section">
+    <div class="centered">
+      <h1>GO THROUGH OUR GALLERY</h1>
+    </div>
+    <div class="container">
+      <div class="slide-headings">
+        <div class="rooms">
+          <a href="#" onclick="showSlide('rooms')">ROOMS</a>
+        </div>
+        <div class="yard">
+          <a href="#" onclick="showSlide('yard')">YARD</a>
+        </div>
+        <div class="entrance">
+          <a href="#" onclick="showSlide('entrance')">ENTRANCE</a>
+        </div>
+      </div>
+      <div class="slide-content">
+        <div id="rooms" class="slide">
+          <img src="images/room1.jpg" alt="Room 1">
+          <img src="images/room.jpg" alt="Room 2">
+          <img src="images/room tv.jpg" alt="Room 3">
+          <img src="images/WhatsApp Image 2024-06-06 at 08.59.27_2b252324.jpg" alt="Room 4">
+        </div>
+        <div id="yard" class="slide" style="display: none;">
+          <img src="yard1.jpg" alt="Yard 1">
+          <img src="yard2.jpg" alt="Yard 2">
+          <!-- Add more images as needed -->
+        </div>
+        <div id="entrance" class="slide" style="display: none;">
+          <img src="entrance1.jpg" alt="Entrance 1">
+          <img src="entrance2.jpg" alt="Entrance 2">
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy;2024 Santo Guest House. All rights reserved</p>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
