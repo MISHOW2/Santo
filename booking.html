@@ -7,6 +7,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/booking.css">
+  
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "UQQS-Ifyl9JbNe1zh",
+      });
+   })();
+</script>
   <title>Booking</title>
 </head>
 <body>
@@ -20,6 +31,7 @@
       </a>
   </div>
 
+ 
   <div class="booking-section">
     <h1>BOOKING</h1>
     <div class="booking-form">
@@ -45,12 +57,12 @@
             <fieldset>
                 <legend>ROOM WITH TV</legend>
                 <label>
-                    <input type="radio" name="roomWithTV" value="3_hours_or_less_tv">
+                    <input type="radio" name="roomType" value="3 hours or less R250 with Tv">
                     3 HOURS OR LESS R250
                 </label>
                 <br>
                 <label>
-                    <input type="radio" name="roomWithTV" value="overnight_tv">
+                    <input type="radio" name="roomType" value="OVERNIGHT R300 with Tv">
                     OVERNIGHT R300
                 </label>
             </fieldset>
@@ -58,25 +70,24 @@
             <fieldset>
                 <legend>ROOM WITHOUT TV</legend>
                 <label>
-                    <input type="radio" name="roomWithoutTV" value="3_hours_or_less_notv">
+                    <input type="radio" name="roomType" value="3 hours or less no Tv">
                     3 HOURS OR LESS R200
                 </label>
                 <br>
                 <label>
-                    <input type="radio" name="roomWithoutTV" value="overnight_notv">
+                    <input type="radio" name="roomType" value="overnight no Tv">
                     OVERNIGHT R250
                 </label>
             </fieldset>
             <hr>
-            
+
             <div class="submit-button"> 
                 <button class="btn btn-primary" type="button" onclick="sendBookingMail();">Submit</button>
             </div>
-            <p class="js-message"></p>
         </form>
     </div>
+    <p class="js-message"></p>
 </div>
-
 
   </div>
 

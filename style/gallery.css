@@ -93,3 +93,16 @@ a {
 }
 
 
+#entrance{
+  display: grid;
+  grid-template-columns: repeat(2, 377px);
+  grid-template-rows: repeat(2, 278px);
+  gap: 10px;
+}
+
+#yard {
+  display: grid;
+  grid-template-columns: repeat(2, 377px);
+  grid-template-rows: repeat(2, 278px);
+  gap: 10px;
+}

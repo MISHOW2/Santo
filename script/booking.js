@@ -2,35 +2,32 @@ function sendBookingMail() {
   var name = document.getElementById("name").value.trim();
   var email = document.getElementById("email").value.trim();
   var phone = document.getElementById("phone").value.trim();
-  var roomWithTV = document.querySelector('input[name="roomWithTV"]:checked');
-  var roomWithoutTV = document.querySelector('input[name="roomWithoutTV"]:checked');
+  var roomType = document.querySelector('input[name="roomType"]:checked');
   var messageElement = document.querySelector(".js-message");
 
-  if (name === "" || email === "" || phone === "") {
+  if (name === "" || email === "" || phone === "" || !roomType) {
       messageElement.textContent = "All fields are required.";
       messageElement.style.color = "red";
       return;
   }
 
-  var roomWithTVValue = roomWithTV ? roomWithTV.value : "None";
-  var roomWithoutTVValue = roomWithoutTV ? roomWithoutTV.value : "None";
+  var roomTypeValue = roomType.value;
 
   var params = {
       name: name,
       email: email,
       phone: phone,
-      roomWithTV: roomWithTVValue,
-      roomWithoutTV: roomWithoutTVValue
+      roomType: roomTypeValue
   };
 
-  const serviceID = "service_hc9jn4d";
-  const templateID = "template_zkjjuvq";
+  const serviceID = "service_hc9jn4d";  
+  const templateID = "template_6xj1lrf"; 
 
   emailjs.send(serviceID, templateID, params)
       .then(res => {
           document.getElementById("bookingForm").reset();
           console.log(res);
-          messageElement.textContent = "Your message sent successfully!!";
+          messageElement.textContent = "Thank you for booking our services! Your room will be ready, and we hope you have a wonderful stay. Please note that payment will be made at the site upon your arrival. If you need anything, please don't hesitate to ask. Enjoy your time with us";
           messageElement.style.color = "green";
       })
       .catch(function (error) {
