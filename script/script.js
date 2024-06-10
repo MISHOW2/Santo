@@ -1,20 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
+function showSlide(slideId) {
+  const slides = document.querySelectorAll('.slide');
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
+  document.getElementById(slideId).style.display = 'grid';
+}
+
+// Example of setting the initial slide to be shown
+document.addEventListener('DOMContentLoaded', () => {
   showSlide('rooms');
 });
 
-function showSlide(slideId) {
-  // Hide all slides
-  var slides = document.querySelectorAll('.slide');
-  slides.forEach(function(slide) {
-      slide.style.display = 'none';
-  });
-
-  // Show the selected slide
-  var selectedSlide = document.getElementById(slideId);
-  if (selectedSlide) {
-      selectedSlide.style.display = 'grid';
-  }
-}
 
 
 function sendMail() {

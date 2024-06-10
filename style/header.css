@@ -9,41 +9,34 @@ html {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   height: 100%;
-  /* Ensure the body and html take up the full height */
   display: flex;
   flex-direction: column;
-  /* Arrange children in a column */
 }
 
 .header {
   background-image: url('../images/background.jpg');
   background-color: rgba(0, 0, 0, 0.377);
-  /* Black color with 50% opacity */
   background-blend-mode: multiply;
-  /* Blend the image and color */
   background-size: cover;
-  /* Cover the entire page */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-position: center center;
-  /* Center the image */
   height: 543px;
-  position: absolute;
-  top: 0;
-  justify-content: center;
   width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .logo {
-  position: absolute;
-  top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.63);
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 700px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 .logo img {
@@ -52,46 +45,129 @@ html {
 
 .logo-container h1 {
   color: #FFF500;
+  font-size: 1.5em;
 }
 
-
 .navigation {
-  margin-top: 170px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
-  /* Center horizontally */
   align-items: center;
-  /* Center vertically */
   flex-direction: column;
-  /* Stack elements vertically */
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .navigation ul {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   list-style: none;
   background-color: #FFF500;
-  width: 631px;
+  width: 100%;
+  max-width: 631px;
   height: 42px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .navigation a {
   text-decoration: none;
   color: black;
   cursor: pointer;
-
 }
 
 .navigation li {
   font-size: 12px;
 }
 
-.social-icons:hover {
-  cursor: pointer;
+.social-icons {
+  display: flex;
+  gap: 10px;
 }
-a {
-  transition: all 0.3s ease-in-out;
+
+.social-icons img {
+  height: 24px;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.welcome-message h1 {
+  color: #FFF500;
+  font-size: 2em;
+}
+
+.welcome-message p {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5em;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navigation li {
+    font-size: 14px;
+  }
+
+  .welcome-message h1 {
+    font-size: 1.5em;
+  }
+
+  .welcome-message p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    gap: 5px;
+    padding: 5px 10px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.2em;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    height: auto;
+    padding: 5px 0;
+  }
+
+  .navigation li {
+    font-size: 12px;
+  }
+
+  .welcome-message h1 {
+    font-size: 1.2em;
+  }
+
+  .welcome-message p {
+    font-size: 0.8em;
+  }
 }

@@ -1,5 +1,91 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   overflow-x: hidden;
+}
+
+.header {
+  background-image: url('../images/background.jpg');
+  background-color: rgba(0, 0, 0, 0.377);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 543px;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.logo-container h1 {
+  color: #FFF500;
+}
+
+.navigation {
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  background-color: #FFF500;
+  width: 631px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navigation li {
+  font-size: 12px;
+}
+
+.social-icons:hover {
+  cursor: pointer;
+}
+
+a {
+  transition: all 0.3s ease-out;
 }
 
 .welcome-message {
@@ -7,7 +93,6 @@ body {
   font-weight: 400;
   text-align: center;
   margin-top: 70px;
-
 }
 
 .hero-section {
@@ -23,15 +108,10 @@ body {
 .rooms {
   background-image: url('../images/entrance.jpg');
   background-color: rgba(0, 0, 0, 0.78);
-  /* Black color with 50% opacity */
   background-blend-mode: multiply;
-  /* Blend the image and color */
   background-size: cover;
-  /* Cover the entire page */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-position: center center;
-  /* Center the image */
   height: 741px;
   top: 0;
   font-weight: 700;
@@ -47,7 +127,6 @@ body {
   background-color: white;
   justify-content: center;
   padding: 20px;
-
 }
 
 .room-content-container img {
@@ -60,7 +139,6 @@ body {
   font-size: 15px;
   width: 350px;
 }
-
 
 .rooms a {
   color: black;
@@ -79,11 +157,11 @@ body {
 
 .booking-infor {
   padding: 70px;
+  font-weight: 700;
 }
 
 .gallary-more {
   margin-top: 130px;
-
 }
 
 .gallery-flex-box img {
@@ -98,10 +176,6 @@ body {
   justify-content: center;
 }
 
-.booking-infor {
-  font-weight: 700;
-}
-
 .link-view-more {
   margin-top: 40px;
   display: flex;
@@ -111,7 +185,6 @@ body {
   background-color: #E2DB20;
   width: 161px;
   margin: 40px auto;
-  /* Center the button horizontally */
 }
 
 .link-view-more a {
@@ -124,24 +197,17 @@ body {
   height: 100%;
 }
 
-
 .contact-us-form {
   background-image: url('../images/entrance.jpg');
   background-color: rgba(0, 0, 0, 0.78);
-  /* Black color with 50% opacity */
   background-blend-mode: multiply;
-  /* Blend the image and color */
   background-size: cover;
-  /* Cover the entire page */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-position: center center;
-  /* Center the image */
   height: 727px;
   top: 0;
   font-weight: 700;
   width: 100%;
-
 }
 
 .contact-us-content {
@@ -150,7 +216,6 @@ body {
 }
 
 .form-group {
-
   margin: 20px;
 }
 
@@ -172,7 +237,6 @@ body {
   width: 99px;
   font-size: 15px;
   border: none;
-
 }
 
 footer {
@@ -180,14 +244,198 @@ footer {
   background-color: #E2DB20;
   height: 123px;
   display: flex;
-  /* Enable Flexbox */
   align-items: center;
-  /* Vertically center the content */
   justify-content: center;
-  /* Horizontally center the content */
   text-align: center;
 }
 
-a {
-  transition: all 0.3s ease-out;
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navigation li {
+    font-size: 14px;
+  }
+  
+  .welcome-message h1 {
+    font-size: 1.5em;
+  }
+
+  .welcome-message p {
+    font-size: 1em;
+  }
+
+  .rooms {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .room-content-container {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .room-content-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .rates {
+    width: 100%;
+  }
+
+  .contact-us-content {
+    padding: 50px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5em;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navigation li {
+    font-size: 14px;
+  }
+
+  .welcome-message h1 {
+    font-size: 1.5em;
+  }
+
+  .welcome-message p {
+    font-size: 1em;
+  }
+
+  .rooms {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .room-content-container {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .room-content-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .rates {
+    width: 100%;
+  }
+
+  .contact-us-content {
+    padding: 50px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    gap: 5px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.2em;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    height: auto;
+    padding: 5px 0;
+  }
+
+  .navigation li {
+    font-size: 12px;
+  }
+
+  .welcome-message h1 {
+    font-size: 1.2em;
+  }
+
+  .welcome-message p {
+    font-size: 0.8em;
+  }
+
+  .rooms {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .room-content-container {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .room-content-container img {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-flex-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .description {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .rates {
+    width: 100%;
+  }
+
+  .contact-us-content {
+    padding: 30px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 12px;
+  }
 }
