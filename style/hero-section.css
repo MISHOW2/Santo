@@ -26,7 +26,7 @@
 
 .room-content-container {
   width: 400px;
-  height: 453px;
+  height: 553px;
   background-color: white;
   justify-content: center;
   padding: 20px;
@@ -190,6 +190,7 @@ footer {
   .room-content-container {
     justify-content: center;
     margin: 20px 0;
+    height: 700px;
   }
 
   .room-content-container img {
@@ -254,7 +255,7 @@ footer {
   .room-content-container {
     width: 90%;
     margin: 20px 0;
-    height: 100%;
+    height: 700px;
   }
 
   .room-content-container img {
@@ -323,7 +324,7 @@ footer {
   .room-content-container {
     width: 100%;
     margin: 20px 0;
-    height: 100%;
+    height: 600px;
   }
 
   .room-content-container img {
