@@ -35,9 +35,10 @@
 }
 
 .left-side {
-  width: 30vw; /* Adjust width */
-  height: 90vh; /* Adjust height */
+  width:600px; /* Adjust width */
+   background-repeat: no-repeat;
   background-image: url('../images/back.jpg');
+  
 }
 
 .booking-section {
@@ -137,9 +138,7 @@ a {
     gap: 5vw; /* Adjust gap */
   }
 
-  .form-group {
-    margin: 4vw; /* Adjust margin */
-  }
+ 
 
   .form-group input {
     width: 40vw; /* Adjust width */
@@ -167,8 +166,8 @@ a {
     height: 7vh; /* Adjust height */
     width: 30vw; /* Adjust width */
   }
-  .left-side{
-    display: hide;
+  .left-side {
+    display: none; /* Hide the left side */
   }
 }
 
@@ -190,8 +189,8 @@ a {
   }
 
   .booking-section {
-    padding: 15vw; /* Adjust padding */
-    margin-left: 15vw; /* Adjust margin-left */
+    padding: 10px; /* Adjust padding */
+    margin-left: 15px; /* Adjust margin-left */
   }
 
   .booking-form {
@@ -199,10 +198,7 @@ a {
     gap: 7vw; /* Adjust gap */
   }
 
-  .form-group {
-    margin: 6vw; /* Adjust margin */
-  }
-
+ 
   .form-group input {
     width: 50vw; /* Adjust width */
     height: 6vh; /* Adjust height */
