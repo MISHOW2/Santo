@@ -59,7 +59,7 @@
 
 .form-group input {
   width: 30vw; /* Adjust width */
-  height: 3vh; /* Adjust height */
+  height:  50px; /* Adjust height */
   border: none;
   margin-top: 1vw; /* Adjust margin-top */
   background-color: #D9D9D9;
