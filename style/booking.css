@@ -3,9 +3,9 @@
 }
 
 .back-to-menu {
-  margin-top: 50PX;
+  margin-top: 5vw; /* Adjust margin-top */
   display: flex;
-  gap: 10px;
+  gap: 1vw; /* Adjust gap */
 }
 
 .back-to-menu a {
@@ -17,87 +17,77 @@
 }
 
 .back-to-menu img {
-  width: 10px;
-
+  width: 1vw; /* Adjust image width */
 }
 
 .back {
-  margin-left: 30px;
-
+  margin-left: 3vw; /* Adjust margin-left */
 }
 
 .flex-box {
   display: flex;
   justify-content: space-between;
-
   top: 0;
 }
 
 .righ-side {
-  height: 901px;
+  height: 90vh; /* Adjust height */
 }
 
 .left-side {
-  width: 562px;
-  height: 901px;
+  width: 30vw; /* Adjust width */
+  height: 90vh; /* Adjust height */
   background-image: url('../images/back.jpg');
 }
 
 .booking-section {
-  padding: 50px;
-  margin-left: 50px;
+  padding: 5vw; /* Adjust padding */
+  margin-left: 5vw; /* Adjust margin-left */
 }
 
 .booking-form {
-  margin-top: 50px;
+  margin-top: 5vw; /* Adjust margin-top */
   align-items: center;
   display: flex;
-  gap: 30px;
+  gap: 3vw; /* Adjust gap */
 }
 
 .form-group {
-
-  margin: 16px;
+  margin: 2vw; /* Adjust margin */
 }
 
 .form-group input {
-  width: 200px;
-  height: 26px;
+  width: 30vw; /* Adjust width */
+  height: 3vh; /* Adjust height */
   border: none;
-  margin-top: 10px;
+  margin-top: 1vw; /* Adjust margin-top */
   background-color: #D9D9D9;
   align-items: center;
 }
 
 .form-group textarea {
-  width: 662px;
-  height: 257px;
+  width: 90%; /* Adjust width */
+  height: 20vh; /* Adjust height */
 }
 
 .form-group button {
   background-color: #E2DB20;
-  height: 44px;
-  width: 99px;
-  font-size: 15px;
+  height: 5vh; /* Adjust height */
+  width: 15vw; /* Adjust width */
+  font-size: 1.5vw; /* Adjust font-size */
   border: none;
-
 }
 
-
 form h1 {
-  font-size: 20PX;
+  font-size: 2vw; /* Adjust font-size */
 }
 
 footer {
-
   background-color: #E2DB20;
-  height: 100px;
+  height: 10vh; /* Adjust height */
   display: flex;
-  /* Enable Flexbox */
   align-items: center;
-  /* Vertically center the content */
   justify-content: center;
-  /* Horizontally center the content */
   text-align: center;
 }
 
@@ -105,12 +95,148 @@ footer {
   color: black;
   background-color: #E2DB20;
   border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  height: 44px;
-  width: 134px;
+  box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.3); /* Adjust box-shadow */
+  height: 5vh; /* Adjust height */
+  width: 20vw; /* Adjust width */
 }
 
 a {
   transition: all 0.3s ease-in-out;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+ 
+  .back-to-menu {
+    margin-top: 7vw; /* Adjust margin-top */
+  }
+  footer {
+    padding: 20px;
+    font-size: 12px;
+    width: 100%;
+    height: 12px;
+   
+  }
+  .back-to-menu img {
+    width: 2vw; /* Adjust image width */
+  }
+
+  .back {
+    margin-left: 5vw; /* Adjust margin-left */
+  }
+
+ 
+
+  .booking-section {
+    padding: 10vw; /* Adjust padding */
+    margin-left: 10vw; /* Adjust margin-left */
+  }
+
+  .booking-form {
+    margin-top: 7vw; /* Adjust margin-top */
+    gap: 5vw; /* Adjust gap */
+  }
+
+  .form-group {
+    margin: 4vw; /* Adjust margin */
+  }
+
+  .form-group input {
+    width: 40vw; /* Adjust width */
+    height: 5vh; /* Adjust height */
+    margin-top: 2vw; /* Adjust margin-top */
+  }
+
+  .form-group textarea {
+    width: 90%; /* Adjust width */
+    height: 30vh; /* Adjust height */
+  }
+
+  .form-group button {
+    height: 7vh; /* Adjust height */
+    width: 25vw; /* Adjust width */
+    font-size: 2vw; /* Adjust font-size */
+  }
+
+  form h1 {
+    font-size: 3vw; /* Adjust font-size */
+  }
+
+ 
+  .submit-button button {
+    height: 7vh; /* Adjust height */
+    width: 30vw; /* Adjust width */
+  }
+  .left-side{
+    display: hide;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-menu {
+    margin-top: 10vw; /* Adjust margin-top */
+  }
+
+  .back-to-menu img {
+    width: 3vw; /* Adjust image width */
+  }
+
+  .back {
+    margin-left: 7vw; /* Adjust margin-left */
+  }
+
+  .left-side {
+   display: hide;
+  }
+
+  .booking-section {
+    padding: 15vw; /* Adjust padding */
+    margin-left: 15vw; /* Adjust margin-left */
+  }
+
+  .booking-form {
+    margin-top: 10vw; /* Adjust margin-top */
+    gap: 7vw; /* Adjust gap */
+  }
+
+  .form-group {
+    margin: 6vw; /* Adjust margin */
+  }
+
+  .form-group input {
+    width: 50vw; /* Adjust width */
+    height: 6vh; /* Adjust height */
+    margin-top: 3vw; /* Adjust margin-top */
+  }
+
+  .form-group textarea {
+    height: 40vh; /* Adjust height */
+  }
+
+  .form-group button {
+    height: 8vh; /* Adjust height */
+    width: 35vw; /* Adjust width */
+    font-size: 2.5vw; /* Adjust font-size */
+  }
+
+  form h1 {
+    font-size: 4vw; /* Adjust font-size */
+  }
+
+  
+
+  .submit-button button {
+    height: 8vh; /* Adjust height */
+    width: 40vw; /* Adjust width */
+  }
+  .left-side{
+    display: hide;
+  }
+  footer {
+    padding: 20px;
+    font-size: 12px;
+    width: 100%;
+    height: 12px;
+    margin-top: 10px;
+  }
+}

@@ -1,6 +1,6 @@
 .hero-section-booking {
   padding: 5%; /* Adjust padding */
-  margin-top: 20%; /* Adjust margin-top */
+  margin-top: 600px; /* Adjust margin-top */
   margin-bottom: 5%; /* Adjust margin-bottom */
 }
 
@@ -16,7 +16,7 @@ span {
 }
 
 .contact-infor-flex img {
-  width: 6%; /* Adjust image width */
+  width: 30px; /* Adjust image width */
 }
 
 .map-view {
@@ -24,7 +24,9 @@ span {
   max-width: 100%; /* Ensure the map doesn't overflow its container */
   height: auto; /* Maintain aspect ratio */
 }
-
+ iframe{
+  width: 100%;
+ }
 .contact-information {
   margin-bottom: 3%; /* Adjust margin-bottom */
   margin-top: 4%; /* Adjust margin-top */
@@ -99,6 +101,9 @@ a {
 
   h1 {
     font-size: 6vw; /* Adjust font size using viewport width */
+  }
+  .map-view{
+    margin-bottom: 30px;
   }
   iframe{
    width: 100%;

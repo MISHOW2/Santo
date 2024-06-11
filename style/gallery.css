@@ -166,7 +166,9 @@ a {
     font-size: 14px;
     padding: 6px 10px;
   }
-
+   #rooms img{
+    width: 100%;
+   }
   footer {
     padding: 20px;
     font-size: 12px;
