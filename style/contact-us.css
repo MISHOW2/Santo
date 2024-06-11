@@ -1,38 +1,37 @@
-
-.hero-section-booking{
-  padding: 70px;
-  margin-top: 600px;
-  margin-bottom: 100px;
+.hero-section-booking {
+  padding: 5%; /* Adjust padding */
+  margin-top: 20%; /* Adjust margin-top */
+  margin-bottom: 5%; /* Adjust margin-bottom */
 }
 
-
-span{
+span {
   color: #E2DB20;
 }
 
-.contact-infor-flex{
+.contact-infor-flex {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 2%; /* Adjust gap */
+  margin-bottom: 3%; /* Adjust margin-bottom */
 }
 
-.contact-infor-flex img{
-  width: 38px;
+.contact-infor-flex img {
+  width: 6%; /* Adjust image width */
 }
 
-.map-view{
-  width: 822px;
-  height: 504px;
+.map-view {
+  width: 90%; /* Adjust map width */
+  max-width: 100%; /* Ensure the map doesn't overflow its container */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.contact-information{
-  margin-bottom: 50px;
-  margin-top: 60px;
+.contact-information {
+  margin-bottom: 3%; /* Adjust margin-bottom */
+  margin-top: 4%; /* Adjust margin-top */
 }
 
-h1{
-  font-size: 50px;
+h1 {
+  font-size: 4vw; /* Adjust font size using viewport width */
   font-weight: 300;
 }
 
@@ -40,57 +39,68 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-/* Adjustments for smaller screens */
+@media (max-width: 1100px) {
+  .hero-section-booking {
+    margin-top:600px ; /* Adjust margin-top */
+   margin-bottom: 30px;
+  }
+
+
+    iframe{
+      width: 100%;
+    }
+}
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   .hero-section-booking {
-    padding: 40px;
-    margin-top: 200px;
-    margin-bottom: 50px;
-    text-align: center;
+    margin-top:600px ; /* Adjust margin-top */
+   margin-bottom: 30px;
   }
 
-  .hero-section-booking h1 {
-    font-size: 30px;
-  }
 
-  .hero-section-booking h3 {
-    font-size: 20px;
-  }
-
-  .contact-infor-flex {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
+    iframe{
+      width: 100%;
+    }
   .contact-infor-flex img {
-    width: 30px;
+    width: 8%; /* Adjust image width */
   }
 
   .map-view {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+    width: 95%; /* Adjust map width */
+  }
+
+  .contact-information {
+    margin-top: 3%; /* Adjust margin-top */
+  }
+
+  h1 {
+    font-size: 5vw; /* Adjust font size using viewport width */
   }
 }
 
-/* Further adjustments for even smaller screens */
 @media (max-width: 480px) {
   .hero-section-booking {
-    padding: 20px;
-    margin-top: 150px;
-    margin-bottom: 30px;
-  }
-
-  .hero-section-booking h1 {
-    font-size: 24px;
-  }
-
-  .hero-section-booking h3 {
-    font-size: 18px;
+    margin-top:600px ; /* Adjust margin-top */
+   margin-bottom: 30px;
   }
 
   .contact-infor-flex img {
-    width: 25px;
+    width: 10%; /* Adjust image width */
+  }
+
+  .map-view {
+    width: 100%; /* Adjust map width */
+  }
+
+  .contact-information {
+    margin-top: 2%; /* Adjust margin-top */
+    margin-bottom: 2%; /* Adjust margin-bottom */
+  }
+
+  h1 {
+    font-size: 6vw; /* Adjust font size using viewport width */
+  }
+  iframe{
+   width: 100%;
   }
 }
