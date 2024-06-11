@@ -1,100 +1,3 @@
-* {
-  font-family: "Inter", sans-serif;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.header {
-  background-image: url('../images/background.jpg');
-  background-color: rgba(0, 0, 0, 0.377);
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 543px;
-  position: absolute;
-  top: 0;
-  justify-content: center;
-  width: 100%;
-}
-
-.logo {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.63);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.logo img {
-  height: 30px;
-}
-
-.logo-container h1 {
-  color: #FFF500;
-}
-
-.navigation {
-  margin-top: 170px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.navigation ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  background-color: #FFF500;
-  width: 631px;
-  height: 42px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
-.navigation li {
-  font-size: 12px;
-}
-
-.social-icons:hover {
-  cursor: pointer;
-}
-
-a {
-  transition: all 0.3s ease-out;
-}
-
-.welcome-message {
-  color: white;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 70px;
-}
-
 .hero-section {
   margin-top: 670px;
 }
@@ -262,7 +165,7 @@ footer {
   .navigation li {
     font-size: 14px;
   }
-  
+
   .welcome-message h1 {
     font-size: 1.5em;
   }
@@ -272,12 +175,13 @@ footer {
   }
 
   .rooms {
+    justify-content: center;
     height: auto;
     flex-direction: column;
   }
 
   .room-content-container {
-    width: 90%;
+    justify-content: center;
     margin: 20px 0;
   }
 
@@ -399,8 +303,7 @@ footer {
   }
 
   .rooms {
-    height: auto;
-    flex-direction: column;
+    display: grid;
   }
 
   .room-content-container {
@@ -409,13 +312,14 @@ footer {
   }
 
   .room-content-container img {
-    width: 100%;
     height: auto;
   }
+  
   .gallery-flex-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
   .description {
     width: 100%;
     font-size: 12px;
@@ -437,5 +341,7 @@ footer {
   footer {
     padding: 20px;
     font-size: 12px;
+    width: 100%;
+    height: 12px;
   }
 }

@@ -1,13 +1,12 @@
 * {
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 body,
 html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -21,23 +20,26 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   height: 543px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  top: 0;
   justify-content: center;
-  position: relative;
+  width: 100%;
 }
 
+
+
 .logo {
+  position: absolute;
+  top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.63);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  box-sizing: border-box;
 }
+
+
 
 .logo img {
   height: 30px;
@@ -45,91 +47,86 @@ html {
 
 .logo-container h1 {
   color: #FFF500;
-  font-size: 1.5em;
+  margin: 0;
 }
 
 .navigation {
-  margin-top: 100px;
+  margin-top: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .navigation ul {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style: none;
   background-color: #FFF500;
-  width: 100%;
+  padding: 10px 0;
   max-width: 631px;
-  height: 42px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 10px;
-  box-sizing: border-box;
+  margin: 0;
 }
 
 .navigation a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+  color: #333;
 }
 
 .navigation li {
   font-size: 12px;
 }
 
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.social-icons img {
-  height: 24px;
+.social-icons a {
+  margin-left: 10px;
 }
 
 .welcome-message {
   text-align: center;
   margin-top: 20px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .welcome-message h1 {
   color: #FFF500;
   font-size: 2em;
+  margin: 0;
 }
 
 .welcome-message p {
   color: white;
   font-size: 1.2em;
+  margin: 10px 0 0;
 }
 
-/* Media Queries for responsiveness */
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-  .logo {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 10px;
-  }
-
-  .logo-container h1 {
-    font-size: 1.5em;
-  }
-
   .navigation ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    height: auto;
-    padding: 10px 0;
+    gap: 5px;
+    padding: 5px 0;
+  }
+
+  .navigation a {
+    font-size: 12px;
   }
 
   .navigation li {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .welcome-message h1 {
@@ -143,24 +140,21 @@ html {
 
 @media (max-width: 480px) {
   .logo {
-    gap: 5px;
-    padding: 5px 10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .logo-container h1 {
-    font-size: 1.2em;
+  .social-icons {
+    margin-top: 10px;
   }
 
   .navigation ul {
     flex-direction: column;
-    width: 100%;
     gap: 5px;
-    height: auto;
-    padding: 5px 0;
   }
 
-  .navigation li {
-    font-size: 12px;
+  .welcome-message {
+    padding: 0 10px;
   }
 
   .welcome-message h1 {
@@ -168,6 +162,6 @@ html {
   }
 
   .welcome-message p {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }

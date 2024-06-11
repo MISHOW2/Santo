@@ -6,10 +6,11 @@ function showSlide(slideId) {
   document.getElementById(slideId).style.display = 'grid';
 }
 
-// Example of setting the initial slide to be shown
+// Show the first slide by default
 document.addEventListener('DOMContentLoaded', () => {
   showSlide('rooms');
 });
+
 
 
 

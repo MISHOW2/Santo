@@ -30,13 +30,12 @@ a {
 
 .container {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 40PX;
 }
 
 .slide-headings {
   display: flex;
-  width: 100%;
-  max-width: 815px;
+  width: 815px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -49,15 +48,14 @@ a {
 }
 
 .slide-headings a:hover {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; 
   border: 1px;
   padding: 10px 20px;
 }
 
 .slide-content {
-  width: 100%;
-  max-width: 815px;
-  height: auto;
+  width: 815px;
+  height: 556px; /* 278px x 2 rows */
   overflow: hidden;
   position: relative;
 }
@@ -66,6 +64,7 @@ a {
   display: none; /* Hide all slides by default */
   justify-content: center;
   align-items: center;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -74,50 +73,104 @@ a {
 
 .slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
-#rooms, #yard, #entrance {
+#rooms {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 377px);
+  grid-template-rows: repeat(2, 278px);
   gap: 10px;
 }
 
-#rooms img, #yard img, #entrance img {
-  width: 100%;
-  height: auto;
+#rooms img {
+  width: 377px;
+  height: 278px;
   object-fit: cover;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
+#entrance {
+  display: grid;
+  grid-template-columns: repeat(2, 377px);
+  grid-template-rows: repeat(2, 278px);
+  gap: 10px;
+}
+
+#yard {
+  display: grid;
+  grid-template-columns: repeat(2, 377px);
+  grid-template-rows: repeat(2, 278px);
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
   .slide-headings {
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .slide-headings a {
     font-size: 18px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
   }
 
-  #rooms, #yard, #entrance {
-    grid-template-columns: 1fr;
+  .slide-content {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    overflow: hidden; /* Hide overflow on smaller screens */
+  }
+
+  .slide {
+    height: auto;
+    position: relative;
+    display: none;
+    width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  #rooms,
+  #entrance,
+  #yard {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  #rooms img,
+  #entrance img,
+  #yard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-headings a {
+    font-size: 16px;
+    padding: 8px 12px;
   }
 }
 
 @media (max-width: 480px) {
-  .back-to-menu {
-    margin: 10px;
-  }
-
   .slide-headings a {
-    font-size: 16px;
-    padding: 5px 10px;
+    font-size: 14px;
+    padding: 6px 10px;
   }
 
-  .slide-headings {
+  footer {
+    padding: 20px;
+    font-size: 12px;
     width: 100%;
-    gap: 5px;
+    height: 12px;
   }
 }
